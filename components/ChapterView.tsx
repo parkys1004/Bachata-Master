@@ -1,16 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { Chapter } from '../types';
-import { PlayCircle, CheckCircle2, Music4, Copy, Check, Terminal, Square, CheckSquare, Gift, Sparkles, Star, Crown, ChevronDown } from 'lucide-react';
+import { PlayCircle, CheckCircle2, Music4, Copy, Check, Terminal, Square, CheckSquare, Gift, Sparkles, Star, Crown, ChevronDown, ExternalLink } from 'lucide-react';
 
 interface ChapterViewProps {
   chapter: Chapter;
   isAppendix?: boolean;
 }
 
-// Helper to render inline formatting (bold, code)
+// Helper to render inline formatting (bold, code, links)
 const renderInlineText = (text: string) => {
-  return text.split(/(\*\*.*?\*\*|`.*?`)/g).map((subPart, subIdx) => {
-    // Bold text (**text**)
+  // Regex matches:
+  // 1. Links: [text](url)
+  // 2. Bold: **text**
+  // 3. Code: `text`
+  const parts = text.split(/(\[.*?\]\(.*?\)|(?:\*\*.*?\*\*)|(?:`.*?`))/g);
+
+  return parts.map((subPart, subIdx) => {
+    if (!subPart) return null;
+
+    // Link: [text](url)
+    const linkMatch = subPart.match(/^\[(.*?)\]\((.*?)\)$/);
+    if (linkMatch) {
+      const [_, linkText, linkUrl] = linkMatch;
+      return (
+        <a
+          key={subIdx}
+          href={linkUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 hover:underline underline-offset-2 transition-colors"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {linkText}
+          <ExternalLink size={12} className="mb-0.5" />
+        </a>
+      );
+    }
+
+    // Bold: **text**
     if (subPart.startsWith('**') && subPart.endsWith('**')) {
       return (
         <strong key={subIdx} className="font-extrabold text-slate-800 dark:text-slate-100">

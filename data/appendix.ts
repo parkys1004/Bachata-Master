@@ -9,11 +9,11 @@ export const appendix: Chapter = {
       id: "appendix-1",
       title: "바차타 필수 플레이리스트",
       items: [
-        "🎧 **입문자를 위한 클래식 & 모던 히트곡**\n\n이 노래들을 많이 듣고 리듬을 익히세요. 바에 가면 반드시 나오는 곡들입니다.",
-        "👑 **1. 로미오 산토스 (Romeo Santos) - 바차타의 왕**\n\n*   **Propuesta Indecente:** 바차타의 국가(National Anthem) 같은 곡. 무조건 들어야 합니다.\n*   **Eres Mía:** 달달하고 로맨틱한 멜로디의 정석.\n*   **Odio (feat. Drake):** 드레이크의 랩 피처링이 돋보이는 모던 바차타.",
-        "🌹 **2. 프린스 로이스 (Prince Royce) - 바차타의 왕자**\n\n*   **Darte Un Beso:** 경쾌하고 밝은 분위기. 초보자가 리듬 타기 좋습니다.\n*   **Deja Vu (with Shakira):** 샤키라와 함께한 섹시한 곡.\n*   **Corazón Sin Cara:** 가사가 아름다운 클래식 히트곡.",
-        "🎸 **3. 다니엘 산타크루즈 (Daniel Santacruz)**\n\n*   **Lento:** '키좀바' 느낌이 섞인 느리고 끈적한 곡. 센슈얼 바차타 연습에 최고입니다.",
-        "🇩🇴 **4. 전통 도미니칸 스타일**\n\n*   **Juan Luis Guerra - Bachata en Fukuoka:** 거장의 품격이 느껴지는 곡.\n*   **Raulin Rodriguez - Esta Noche:** 정통 기타 사운드의 진수.",
+        "🎧 **입문자를 위한 클래식 & 모던 히트곡**\n\n이 노래들을 많이 듣고 리듬을 익히세요. 제목 옆의 링크를 클릭하면 바로 감상하실 수 있습니다.",
+        "👑 **1. 로미오 산토스 (Romeo Santos) - 바차타의 왕**\n\n*   **Propuesta Indecente:** [▶️ YouTube](https://www.youtube.com/watch?v=QFs3PIZb3js) - 바차타의 국가(National Anthem) 같은 곡. 무조건 들어야 합니다.\n*   **Eres Mía:** [▶️ YouTube](https://youtu.be/8iPcqtHoR3U?si=1QS1cK9bD9l3qYkS) - 달달하고 로맨틱한 멜로디의 정석.\n*   **Odio (feat. Drake):** [▶️ YouTube](https://youtu.be/W8r-eIhp4j0?si=kJxPAJ6RQ--xEPOp) - 드레이크의 랩 피처링이 돋보이는 모던 바차타.",
+        "🌹 **2. 프린스 로이스 (Prince Royce) - 바차타의 왕자**\n\n*   **Darte Un Beso:** [▶️ YouTube](https://youtu.be/bdOXnTbyk0g?si=Kw9Exe3uHNezyBvh) - 경쾌하고 밝은 분위기. 초보자가 리듬 타기 좋습니다.\n*   **Deja Vu (with Shakira):** [▶️ YouTube](https://youtu.be/XEvKn-QgAY0?si=KHyrgBIHSp29auwB) - 샤키라와 함께한 섹시한 곡.\n*   **Corazón Sin Cara:** [▶️ YouTube](https://youtu.be/XNGWDH-6yv8?si=_EOdkgR53aBzHlUE) - 가사가 아름다운 클래식 히트곡.",
+        "🎸 **3. 다니엘 산타크루즈 (Daniel Santacruz)**\n\n*   **Lento:** [▶️ YouTube](https://youtu.be/OnwBAyJpSeE?si=YdOLYI507qZeoucZ) - '키좀바' 느낌이 섞인 느리고 끈적한 곡. 센슈얼 바차타 연습에 최고입니다.",
+        "🇩🇴 **4. 전통 도미니칸 스타일**\n\n*   **Juan Luis Guerra - Bachata en Fukuoka:** [▶️ YouTube](https://youtu.be/_4NBD3SqBwg?si=XRPxVEkPLmyFTveo) - 거장의 품격이 느껴지는 곡.\n*   **Raulin Rodriguez - Esta Noche:** [▶️ YouTube](https://youtu.be/8Ei86cJIWlk?si=DdVJlppTpCgpF74I) - 정통 기타 사운드의 진수.",
         "✅ **소셜 댄스 준비물 체크리스트**\n\n바(Bar)에 가기 전 확인하세요.\n\n* [ ] **댄스화 (Dance Shoes)**\n    - [ ] 바닥이 스웨이드나 가죽으로 된 전용 신발인가? (고무 밑창은 무릎 나갑니다)\n    - [ ] 굽 높이는 적당한가? (여성 초보는 5~7cm 권장)\n\n* [ ] **의상 (Attire)**\n    - [ ] 팔을 들었을 때 불편하지 않은가?\n    - [ ] 땀 흡수가 잘 되거나 통기성이 좋은가?\n    - [ ] (여성) 턴을 돌 때 속옷이 노출되지 않는가? (속바지 필수)\n\n* [ ] **에티켓 용품 (Hygiene Kit)**\n    - [ ] 여분의 티셔츠 (최소 1~2벌)\n    - [ ] 손수건 또는 스포츠 타월\n    - [ ] 구강청결제, 껌, 민트\n    - [ ] 데오드란트 또는 은은한 향수\n    - [ ] 부채 (쉬는 시간 필수템)"
       ]
     },
