@@ -25,6 +25,28 @@ const App: React.FC = () => {
     }
   }, []);
 
+  // Content Protection (Block Copy & Right Click)
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Prevent Ctrl+C, Ctrl+A, Ctrl+X, Ctrl+S, Ctrl+P, Ctrl+U
+      if ((e.ctrlKey || e.metaKey) && ['c', 'a', 'x', 's', 'p', 'u'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const toggleTheme = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove('dark');

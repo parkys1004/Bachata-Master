@@ -18,7 +18,7 @@
     <meta name="twitter:image" content="https://github.com/parkys1004/img/blob/main/etc/bachatam.png?raw=true" />
 
     <meta name="theme-color" content="#4f46e5" />
-    <title>바차타 마스터 클래스 | Bachata Master Guide</title>
+    <title>바차타 마스터 클래스 전자책 | Bachata Master Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -69,6 +69,11 @@
         font-family: 'Noto Sans KR', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        /* Prevent text selection */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
       /* Custom scrollbar for webkit */
       ::-webkit-scrollbar {
